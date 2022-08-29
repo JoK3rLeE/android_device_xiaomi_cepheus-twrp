@@ -81,8 +81,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_MAINTAINER="Pranav Talmale"
     export FOX_VERSION="R11.1_0"
 
-    # run a process after formatting data to recreate /data/media/0 (only when forced-encryption is being disabled)
-    export OF_RUN_POST_FORMAT_PROCESS=1
+   # run a process after formatting data to recreate /data/media/0 
+    export OF_FORCE_CREATE_DATA_MEDIA_ON_FORMAT=1
 
 		
 	# let's see what are our build VARs
