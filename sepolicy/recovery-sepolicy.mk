@@ -1,3 +1,3 @@
 # Recovery Sepolicy
 BOARD_SEPOLICY_DIRS += \
-    device/xiaomi/raphael/sepolicy/recovery
+    device/xiaomi/cepheus/sepolicy/recovery

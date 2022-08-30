@@ -29,14 +29,7 @@ import /init.recovery.qcom_decrypt.rc
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-		
-service unified-script /system/bin/unified-script.sh
-    user root
-    group root
-    disabled
-    oneshot
-    seclabel u:r:recovery:s0   	
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice  	
 	
 service vendor.qti.vibrator /system/bin/vendor.qti.hardware.vibrator.service
     user root
@@ -49,6 +42,4 @@ on boot
     start health-hal-2-1
     start vendor.qti.vibrator
     setprop sys.usb.config adb
-	chmod 0777 /system/bin/unified-script.sh
-    start unified-script
 
