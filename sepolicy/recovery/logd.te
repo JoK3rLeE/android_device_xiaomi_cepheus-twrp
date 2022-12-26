@@ -1,5 +1,0 @@
-allow logd rootfs:file { entrypoint getattr open read execute };
-allow logd rootfs:dir { read };
-allow logd rootfs:file { map };
-allow logd socket_device:dir { add_name  write };
-allow logd socket_device:sock_file { create };

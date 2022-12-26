@@ -1,4 +1,0 @@
-allow init kernel:security { setcheckreqprot };
-allow init kernel:system { module_request };
-allow init rootfs:lnk_file { setattr };
-allow init rootfs:file { setattr };

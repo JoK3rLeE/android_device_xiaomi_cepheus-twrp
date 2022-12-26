@@ -1,2 +1,0 @@
-allow kernel recovery:fd { use };
-allow kernel kernel:capability { kill };

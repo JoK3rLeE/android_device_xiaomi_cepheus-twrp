@@ -140,8 +140,4 @@ BUILD_BROKEN_DUP_RULES := true
 
 #
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
-
-# SEPolicy
--include device/xiaomi/cepheus/sepolicy/recovery-sepolicy.mk
-SELINUX_IGNORE_NEVERALLOWS := true
 #
