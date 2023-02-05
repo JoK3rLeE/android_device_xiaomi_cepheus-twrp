@@ -62,10 +62,8 @@ BOARD_KERNEL_CMDLINE := \
 	service_locator.enable=1 \
 	swiotlb=2048 \
 	androidboot.usbcontroller=a600000.dwc3 \
-	earlycon=msm_geni_serial,0xa90000 \
 	androidboot.usbconfigfs=true \
 	androidboot.boot_devices=soc/1d84000.ufshc \
-	androidboot.super_partition=system \
 	androidboot.selinux=permissive
 
 BOARD_KERNEL_BASE := 0x00000000
@@ -117,9 +115,10 @@ BOARD_CEPHEUS_DYNAMIC_PARTITIONS_SIZE := 5364514816 # BOARD_SUPER_PARTITION_SIZE
 BOARD_EROFS_PCLUSTER_SIZE := 65536
 BOARD_EROFS_COMPRESSOR := lz4
 
-BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := f2fs
-BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_SYSTEMIMAGE_PARTITION_TYPE := erofs
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := erofs
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
