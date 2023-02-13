@@ -172,11 +172,8 @@ TW_FIX_DECRYPTION_ON_DATA_MEDIA := true
 # drift/offset
 TW_QCOM_ATS_OFFSET := 1617714502203
 
-# cure for "ELF binaries" problems
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-
-# deal with "error: overriding commands for target" problems
+# TWRP 12.1 requirements
+TARGET_SUPPORTS_64_BIT_APPS := true
 BUILD_BROKEN_DUP_RULES := true
-
-#
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
