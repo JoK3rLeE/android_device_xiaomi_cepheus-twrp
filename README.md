@@ -24,30 +24,34 @@
 
 ## Features 
 
-- Booting.
+- Booting
+- Decryption 
 - ADB
 - MTP
 - OTG
 - Vibration
 
-## To-Do 
+## Known Issue 
 
-** WIP **
+1. **Format Data** option are broken, use following method instead: 
+- Enter Wipe > Advanced Wipe > Select Data and Internal Storage > Swipe to Wipe
 
-- **Decryption** (Android 13 Dynamic Retrofit ONLY)
+2. **Logcat produced by TWRP cannot copy to desktop**. 
+- seems like txt file will have issue, need someone to verify it. 
 
-** Current Bug** : Failed to find working CE key for user0, couldn't read key for user0 
+3. **IF YOU ARE FROM NON RETROFIT, DO NOT USE THIS TWRP TO FLASH!** 
+- It Won't work. spent too much time to fix this issue till lose my patience. 
 
-IF anyone knows knows how to fix, please lmk!
+4. **Pixel Experience Retrofit version isn't supported.**
+- Due to different encryption method (Metadata) 
+
+### This Recovery only supported Following Formats: 
+ 
+ DATA - F2FS 
+ CACHE - EXT4/ F2FS
+ SYSTEM - EXT4/ EROFS
+ VENDOR - EXT4/ EROFS
+
 
 ## Device picture
 ![Xiaomi Mi 9](https://raw.githubusercontent.com/PixelExperience/official_devices/master/images/.thumbs/300/cepheus.png)
-
-
-# NOTE 
-
-Decryption for A13 still not working (WIP) but anyone who likes to use USB OTG to install kernel, update ROMs, Flash magisk can try it. 
-
-TEST at your OWN Risk!
-
-https://mega.nz/file/4EYRVIwQ#WmpbCCKUBh8OKcPrq2kGaa34hSv8jVPeRkDGIcwDH9o
