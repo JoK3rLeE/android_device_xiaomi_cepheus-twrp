@@ -40,17 +40,17 @@
 - seems like txt file will have issue, need someone to verify it. 
 
 3. **IF YOU ARE FROM NON RETROFIT, DO NOT USE THIS TWRP TO FLASH!** 
-- It Won't work. spent too much time to fix this issue till lose my patience. 
+- WIP 
 
 4. **Pixel Experience Retrofit version isn't supported.**
-- Due to different encryption method (Metadata) 
+- Due to different DT and encryption method (Metadata)
 
 ### This Recovery only supported Following Formats: 
  
- DATA - F2FS 
- CACHE - EXT4/ F2FS
- SYSTEM - EXT4/ EROFS
- VENDOR - EXT4/ EROFS
+- **DATA** - F2FS 
+- **CACHE** - EXT4/ F2FS
+- **SYSTEM** - EXT4/ EROFS
+- **VENDOR** - EXT4/ EROFS
 
 
 ## Device picture
