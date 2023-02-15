@@ -33,3 +33,6 @@
 
 # Removable storage
 /usb_otg       vfat   /dev/block/sdg1                    /dev/block/sdg      flags=fsflags=utf8;display="USB-OTG";storage;wipeingui;removable
+
+# System partitions (needed for non retrofit convert to retrofit)
+/system_root   ext4   	/dev/block/bootdevice/by-name/system                 flags=display="system_root"
