@@ -25,7 +25,7 @@
 ## Features 
 
 - Booting
-- Decryption 
+- Decryption (A13)
 - ADB
 - MTP
 - OTG
@@ -34,18 +34,18 @@
 ## Known Issue 
 
 1. **Format Data** option are broken, use following method instead: 
+
 - Enter Wipe > Advanced Wipe > Select Data and Internal Storage > Swipe to Wipe
 
 2. **Logcat produced by TWRP cannot copy to desktop**. 
-- seems like txt file will have issue, need someone to verify it. 
 
-3. **IF YOU ARE FROM NON RETROFIT, DO NOT USE THIS TWRP TO FLASH!** 
-- WIP 
+- seems like txt file will have issue, need someone to verify it.  
 
-4. **Pixel Experience Retrofit version isn't supported.**
-- Due to different DT and encryption method (Metadata)
+3. **Pixel Experience Retrofit version isn't supported.**
 
-### This Recovery only supported Following Formats: 
+- Will look into it. 
+
+## This Recovery supported Following Formats: 
  
 - **DATA** - F2FS 
 - **CACHE** - EXT4/ F2FS
@@ -55,3 +55,6 @@
 
 ## Device picture
 ![Xiaomi Mi 9](https://raw.githubusercontent.com/PixelExperience/official_devices/master/images/.thumbs/300/cepheus.png)
+
+## Download Link 
+[Sourceforge](https://sourceforge.net/projects/device-xiaomi-cepheus/files/TWRP%20%28Retrofit%29/)
