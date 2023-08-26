@@ -31,28 +31,6 @@
 - OTG
 - Vibration
 
-## Known Issue 
-
-1. **Format Data** option are broken, use following method instead: 
-
-- Enter Wipe > Advanced Wipe > Select Data and Internal Storage > Swipe to Wipe
-
-2. **Logcat produced by TWRP cannot copy to desktop**. 
-
-- seems like txt file will have issue, need someone to verify it.  
-
-3. **Pixel Experience Retrofit version isn't supported.**
-
-- Will look into it. 
-
-## This Recovery supported Following Formats: 
- 
-- **DATA** - F2FS 
-- **CACHE** - EXT4/ F2FS
-- **SYSTEM** - EXT4/ EROFS
-- **VENDOR** - EXT4/ EROFS
-
-
 ## Device picture
 ![Xiaomi Mi 9](https://raw.githubusercontent.com/PixelExperience/official_devices/master/images/.thumbs/300/cepheus.png)
 
