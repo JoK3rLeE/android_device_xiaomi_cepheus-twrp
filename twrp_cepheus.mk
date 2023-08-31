@@ -19,13 +19,15 @@ PRODUCT_RELEASE_NAME := cepheus
 DEVICE_PATH := device/xiaomi/cepheus
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
+
+# Configure gsi_keys.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cepheus
