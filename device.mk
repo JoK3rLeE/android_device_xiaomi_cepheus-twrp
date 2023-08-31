@@ -60,9 +60,9 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock.recovery \
     fastbootd
 
-# Recovery
-TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+# Fstab and flags
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/fstab/recovery.fstab
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/fstab/twrp.flags:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/twrp.flags
 
 # Recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
