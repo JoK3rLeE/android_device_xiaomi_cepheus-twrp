@@ -51,10 +51,8 @@ BOARD_KERNEL_CMDLINE := \
 	androidboot.console=ttyMSM0 \
 	androidboot.memcg=1 \
 	lpm_levels.sleep_disabled=1 \
-	video=vfb:640x400,bpp=32,memsize=3072000 \
 	msm_rtb.filter=0x237 \
 	service_locator.enable=1 \
-	swiotlb=2048 \
 	androidboot.usbcontroller=a600000.dwc3 \
 	earlycon=msm_geni_serial,0xa90000 \
 	androidboot.usbconfigfs=true \
@@ -119,6 +117,7 @@ TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -141,8 +140,11 @@ BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 # Extras props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Network
+BUILD_BROKEN_USES_NETWORK := true
+
 # TWRP Configuration
-TW_DEVICE_VERSION := 1 Pixel+ 
+TW_DEVICE_VERSION := 1 Experimental build 1
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
@@ -169,9 +171,9 @@ TW_INCLUDE_FASTBOOTD := true
 TW_INCLUDE_PYTHON := true
 TW_PREPARE_DATA_MEDIA_EARLY := true
 TW_ENABLE_FS_COMPRESSION := true
-
-# drift/offset
-TW_QCOM_ATS_OFFSET := 1617714502203
+TW_NO_EXFAT_FUSE := true
+TW_FRAMERATE := 60
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 
 # TWRP 12.1 requirements
 TARGET_SUPPORTS_64_BIT_APPS := true
