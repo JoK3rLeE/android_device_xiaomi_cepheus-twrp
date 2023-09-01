@@ -81,3 +81,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 
 # Vibrator
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+
+# Hack for copying dtb
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/prebuilt/dtb:$(TARGET_COPY_OUT)/dtb
