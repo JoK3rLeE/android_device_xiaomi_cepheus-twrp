@@ -174,6 +174,7 @@ TW_ENABLE_FS_COMPRESSION := true
 TW_NO_EXFAT_FUSE := true
 TW_FRAMERATE := 60
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+TW_FIX_XIAOMI_FORMATDATA_CAUSED_VIBRATION := true
 
 # TWRP 12.1 requirements
 TARGET_SUPPORTS_64_BIT_APPS := true
